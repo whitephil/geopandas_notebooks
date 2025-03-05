@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <title>City Limits</title>
+                <onlink>https://maps.bouldercolorado.gov/arcgis/rest/services/plan/CityLimits/MapServer/0</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>City limits for the City of Boulder, Colorado.</abstract>
+            <purpose>Boulder, Colorado city limits</purpose>
+        </descript>
+        <status>
+            <update>Continually</update>
+        </status>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>city</themekey>
+                <themekey>boulder</themekey>
+                <themekey>city limits</themekey>
+                <themekey>limits</themekey>
+                <themekey>limit</themekey>
+                <themekey>city limit</themekey>
+                <themekey>boundary</themekey>
+                <themekey>boundaries</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>https://creativecommons.org/publicdomain/zero/1.0/</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>City of Boulder</cntorg>
+                    <cntper>Sean Metrick</cntper>
+                </cntorgp>
+                <cntemail>MetrickS@bouldercolorado.gov</cntemail>
+            </cntinfo>
+        </ptcontac>
+    </idinfo>
+    <eainfo>
+        <detailed>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20190326</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>

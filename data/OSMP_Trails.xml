@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <title>OSMP Trails</title>
+                <onlink>https://maps.bouldercolorado.gov/arcgis2/rest/services/osmp/Trails/MapServer/4</onlink>
+            </citeinfo>
+        </citation>
+        <descript>
+            <abstract>These data represent OSMP's designated trails. All trails in this dataset are also managed by OSMP, even though some trails are owned by other agencies. In general, each trail has been broken up into segments, usually between junctions. The unique ID for each trail segment is within the &amp;quot;RID&amp;quot; field, which is unique over time. This means the RID of a trail segment can change over time, for example when a new alignment occurs. Each trail segment has a unique ID, within the &amp;quot;SegmentID&amp;quot; field, that never changes over time.All trails are routes and have directionality and measures associated with them. The measures are based on the field measured trail length. Field measured trail length is stored in the &amp;quot;MeasuredFeet&amp;quot; field and GIS trail length is stored in the &amp;quot;shape.length&amp;quot; field. Currently the &amp;quot;Mileage&amp;quot; field is based on GIS trail length and not the field measured length. These data are topologically connected to the Trail Junctions feature class.</abstract>
+            <purpose>Designated trails managed by the City of Boulder OSMP.</purpose>
+        </descript>
+        <status>
+            <update>As needed</update>
+        </status>
+        <keywords>
+            <theme>
+                <themekt>None</themekt>
+                <themekey>OSMP</themekey>
+                <themekey>City of Boulder</themekey>
+                <themekey>Open Space and Mountain Parks</themekey>
+                <themekey>Trails</themekey>
+            </theme>
+        </keywords>
+        <accconst>None</accconst>
+        <useconst>https://creativecommons.org/publicdomain/zero/1.0/</useconst>
+        <ptcontac>
+            <cntinfo>
+                <cntorgp>
+                    <cntorg>City of Boulder | Open Space and Mountain Parks</cntorg>
+                </cntorgp>
+            </cntinfo>
+        </ptcontac>
+        <datacred>City of Boulder Open Space and Mountain Parks</datacred>
+    </idinfo>
+    <spdoinfo>
+        <ptvctinf>
+            <sdtsterm>
+                <ptvctcnt>637</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>OSMP.TrailsOSMP</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>DateTo</attrlabl>
+                <attrdef>The date that the trail was decommissioned. If the year is 2099, the trail is still active.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>Display</attrlabl>
+                <attrdef>Is the trail displayed to the public</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>GLOBALID</attrlabl>
+            </attr>
+            <attr>
+                <attrlabl>MEASUREDFEET</attrlabl>
+                <attrdef>The field measured length of the trail segment as measured by a wheel out in the field.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>SegmentID</attrlabl>
+                <attrdef>The unique ID of the trail. The first three digits are the trail ID, the next two are the junction IDs listed in the direction of the measures along the trail. This value is unique only at a particular moment in time.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>Mileage</attrlabl>
+                <attrdef>Calculated mileage as it exists in GIS. This does not represent real-world mileage as measured by a wheel.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>Horses</attrlabl>
+                <attrdef>Is equestrian use allowed</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>TrailType</attrlabl>
+                <attrdef>The type of trail</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>DateFrom</attrlabl>
+                <attrdef>The date the trail was added to the OSMP system. These data are not 100% accurate, and represent our best guess.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>Bicycles</attrlabl>
+                <attrdef>Is bicycle use allowed</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>Shape.len</attrlabl>
+                <attrdef>Produced by ArcMap when a feature is calculated using the field calculator.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>TRAILNAME</attrlabl>
+                <attrdef>The official name of the trail.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>RID</attrlabl>
+                <attrdef>The route ID. Each segment/record has a unique RID. This is used for linear referencing. This value is unique over time and will never be repeated.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>TrlID</attrlabl>
+                <attrdef>The trail ID, which is only unique in association with the trail name.</attrdef>
+            </attr>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>OWNER</attrlabl>
+                <attrdef>Who owns the trail, the manager is always OSMP</attrdef>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20190417</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>

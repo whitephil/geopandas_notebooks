@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+    <idinfo>
+        <citation>
+            <citeinfo>
+                <origin/>
+                <title>OSMP Properties</title>
+            </citeinfo>
+        </citation>
+        <status>
+            <update>As needed</update>
+        </status>
+        <spdom>
+            <bounding>
+                <westbc>-105.63889999999823</westbc>
+                <eastbc>-105.10679999999824</eastbc>
+                <northbc>40.17829999999932</northbc>
+                <southbc>39.865799999999325</southbc>
+            </bounding>
+        </spdom>
+        <accconst>None</accconst>
+        <useconst>None</useconst>
+    </idinfo>
+    <spdoinfo>
+        <ptvctinf>
+            <sdtsterm>
+                <ptvctcnt>16960</ptvctcnt>
+            </sdtsterm>
+        </ptvctinf>
+    </spdoinfo>
+    <eainfo>
+        <detailed>
+            <enttyp>
+                <enttypl>sdeProperty.LAND.ParcelFabric_Parcels</enttypl>
+            </enttyp>
+            <attr>
+                <attrlabl>Type</attrlabl>
+                <attrdef>Contains values pertaining parcel types based on esri's Local Government Information Model. Contains coded values as follows: 1 = Township, 2 = Section, 3 = Quarter, 12 = Quarter Quarter, 5 = Management Area Designations, 6 = building envelope (conveyance division), 7 = fee property, 9 = easement (encumberance)</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Acres</attrlabl>
+                <attrdef>Contains values for acreage of each parcel as calculated based on feature geometry using Calculate Geometry Attributes tool</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>JointPurch</attrlabl>
+                <attrdef>Contains coded values, 0 and 1. 0 = No and indicates that property was purchased entirely by the City of Boulder. 1 = Yes and indicates that the cost of the easement or fee ownership was divided between the City of Boulder and one or more other parties. In this case, referenece to the 'Manager' field will provide some insight to purchase partners, but complete information is not captured in the GIS.</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>AcqID</attrlabl>
+                <attrdef>Contains numeric ID used to link to SQL acquisitions database. All properties approved for acquisition at same time by city council and OSMP Board are grouped together under the same AcqID value.</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>EncumbranceType</attrlabl>
+                <attrdef>For features designated type 9, this field designates what type of encumberance OSMP holds on the parcel</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>OBJECTID</attrlabl>
+                <attrdef>Internal feature number.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Sequential unique whole numbers that are automatically generated.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>BuildingEnvelope</attrlabl>
+                <attrdef>Contains coded values, 0 and 1. 1 = Yes and indicates that portion of a property that the City holds a conservation easement where permanent structures are permitted under the terms of the easement. The BuildingEnvelope features will share an AcqID and PropertyID with the other feature(s) that represent the rest of the property. 0 = No and applies to all other features</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PolyID</attrlabl>
+                <attrdef>Contains unique numerical ID for each feature</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Manager</attrlabl>
+                <attrdef>Values indicate which party is responsible for management of given parcel</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>WhyNoAccess</attrlabl>
+                <attrdef>Used in conjunction with properties where PublicAccess = 0, string values indicate why a given property or portion thereof are closed to public access</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>YearClose</attrlabl>
+                <attrdef>Contains values indicating which year the real estate acquisitions was completed (AKA closed)</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PropertyID</attrlabl>
+                <attrdef>Contains numeric IDs unique to each property. Some properties are split in to multiple polygons as dictated by the need to display building envelopes and no public access areas. These polygons will share a AcqID and PropertyID but will have unique PolyID values.</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>Shape</attrlabl>
+                <attrdef>Feature geometry.</attrdef>
+                <attrdefs>Esri</attrdefs>
+                <attrdomv>
+                    					
+                    <udom>Coordinates defining the features.</udom>
+                    				
+                </attrdomv>
+            </attr>
+            <attr>
+                <attrlabl>PropertyName</attrlabl>
+                <attrdef>Contains internally referenced name for given parcel that may or may not coincide exactly with tiltes listed on legal documents pertaining to property</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+            <attr>
+                <attrlabl>PublicAccess</attrlabl>
+                <attrdef>Contains coded values, 0 and 1. 0 = No and indicates that the entire property or portion of property indicated by the polygon feature with the 'No' value is closed to public access. 1 = 'Yes' and indicates that the land represented by polygon feature is open to public access. Access to properties and specific areas are subject to other restraints such as seasonal wildlife closures, temporary restrictions for trail construction, ecological restoration, public safety and other land management operations. See 'WhyNoAccess' field for more information.</attrdef>
+                <attrdefs>Charlie Philbrick, Data Steward</attrdefs>
+            </attr>
+        </detailed>
+    </eainfo>
+    <metainfo>
+        <metd>20190507</metd>
+        <metc>
+            <cntinfo>
+                <!--no contact person or organization name available-->
+            </cntinfo>
+        </metc>
+        <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+        <metstdv>FGDC-STD-001-1998</metstdv>
+        <mettc>local time</mettc>
+    </metainfo>
+</metadata>
