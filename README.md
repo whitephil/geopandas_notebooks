@@ -1,8 +1,8 @@
 # geopandas_notebooks
 Notebooks for GeoPandas Workshop
 
-### Pull all the notebooks to our JupyterHub using this link:  
-https://jupyterhub-crdds-colorado.org/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Foutpw%2Fgeopandas_notebooks&urlpath=lab%2Ftree%2Fgeopandas_notebooks%2F&branch=master
+### Use MyBinder to open a live JupyterHub instance and run the code in these notebooks here:  
+[https://mybinder.org/v2/gh/whitephil/geopandas_notebooks/HEAD](https://mybinder.org/v2/gh/whitephil/geopandas_notebooks/HEAD){:target="_blank"}
 
 You can view the competed notebooks here:
 
